@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Properties | ALTERRA Estates & Realty</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="index.html" class="brand">
+            <span class="brand-name">ALTERRA<span>.</span></span>
+            <span class="brand-subtitle">ESTATES & REALTY</span>
+        </a>
+
+        <nav class="navigation" id="navigation">
+            <a href="index.html#home" class="nav-link">Home</a>
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="properties.html" class="nav-link active">Properties</a>
+            <a href="index.html#services" class="nav-link">Services</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="index.html#contact" class="nav-button">Enquire Now</a>
+
+        <button class="menu-toggle" id="menu-toggle"
+            aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- PAGE HERO -->
+
+    <section class="properties-hero">
+        <div class="container">
+
+            <span class="eyebrow">THE ALTERRA COLLECTION</span>
+
+            <h1>Find a place to <em>belong.</em></h1>
+
+            <p>
+                Explore thoughtfully selected residential,
+                commercial and investment properties across Nigeria.
+            </p>
+
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Properties</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROPERTY LISTINGS -->
+
+    <section class="listing-section section-padding">
+
+        <div class="container">
+
+            <div class="listing-heading">
+                <div>
+                    <span class="section-number">EXPLORE OUR COLLECTION</span>
+                    <h2>Available <em>properties.</em></h2>
+                </div>
+
+                <p id="listing-count">4 demonstration listings</p>
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="listing-filters">
+
+                <div class="filter-group">
+                    <label for="listing-purpose">Purpose</label>
+                    <select id="listing-purpose">
+                        <option value="all">All purposes</option>
+                        <option value="sale">For sale</option>
+                        <option value="rent">For rent</option>
+                        <option value="lease">For lease</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="listing-type">Property type</label>
+                    <select id="listing-type">
+                        <option value="all">All types</option>
+                        <option value="house">Houses</option>
+                        <option value="apartment">Apartments</option>
+                        <option value="duplex">Duplexes</option>
+                        <option value="land">Land</option>
+                        <option value="commercial">Commercial</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="listing-location">Location</label>
+                    <select id="listing-location">
+                        <option value="all">All locations</option>
+                        <option value="lagos">Lagos</option>
+                        <option value="abuja">Abuja</option>
+                        <option value="ibadan">Ibadan</option>
+                        <option value="port-harcourt">Port Harcourt</option>
+                    </select>
+                </div>
+
+                <button type="button" id="reset-filters" class="reset-filter">
+                    Reset filters
+                </button>
+
+            </div>
+
+
+            <!-- PROPERTY GRID -->
+
+            <div class="listing-grid" id="listing-grid">
+
+
+                <!-- PROPERTY 1 -->
+
+                <article class="listing-card"
+                    data-purpose="sale"
+                    data-type="duplex"
+                    data-location="lagos">
+
+                    <div class="listing-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=85"
+                            alt="Modern luxury duplex">
+
+                        <span class="listing-status">For Sale</span>
+                    </div>
+
+                    <div class="listing-info">
+
+                        <span class="listing-location">LEKKI PHASE 1, LAGOS</span>
+
+                        <h3>Contemporary Luxury Duplex</h3>
+
+                        <p class="listing-description">
+                            An elegant residence with contemporary
+                            architecture and refined living spaces.
+                        </p>
+
+                        <div class="listing-features">
+                            <span>5 Bedrooms</span>
+                            <span>5 Bathrooms</span>
+                            <span>Duplex</span>
+                        </div>
+
+                        <div class="listing-bottom">
+                            <strong>₦450,000,000</strong>
+                            <a href="property-details.html">View Property ↗</a>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- PROPERTY 2 -->
+
+                <article class="listing-card"
+                    data-purpose="rent"
+                    data-type="apartment"
+                    data-location="abuja">
+
+                    <div class="listing-image">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+                            alt="Modern luxury apartment">
+
+                        <span class="listing-status">For Rent</span>
+                    </div>
+
+                    <div class="listing-info">
+
+                        <span class="listing-location">MAITAMA, ABUJA</span>
+
+                        <h3>Refined City Apartment</h3>
+
+                        <p class="listing-description">
+                            A sophisticated apartment with comfortable
+                            interiors and modern finishes.
+                        </p>
+
+                        <div class="listing-features">
+                            <span>3 Bedrooms</span>
+                            <span>3 Bathrooms</span>
+                            <span>Apartment</span>
+                        </div>
+
+                        <div class="listing-bottom">
+                            <strong>₦18,000,000 / year</strong>
+                            <a href="property-details.html">View Property ↗</a>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- PROPERTY 3 -->
+
+                <article class="listing-card"
+                    data-purpose="sale"
+                    data-type="house"
+                    data-location="lagos">
+
+                    <div class="listing-image">
+                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1000&q=85"
+                            alt="Luxury residential property">
+
+                        <span class="listing-status">For Sale</span>
+                    </div>
+
+                    <div class="listing-info">
+
+                        <span class="listing-location">VICTORIA ISLAND, LAGOS</span>
+
+                        <h3>Modern Architectural Residence</h3>
+
+                        <p class="listing-description">
+                            A spacious home with striking architecture
+                            and carefully designed interiors.
+                        </p>
+
+                        <div class="listing-features">
+                            <span>4 Bedrooms</span>
+                            <span>4 Bathrooms</span>
+                            <span>Detached</span>
+                        </div>
+
+                        <div class="listing-bottom">
+                            <strong>₦680,000,000</strong>
+                            <a href="property-details.html">View Property ↗</a>
+                        </div>
+
+                    </div>
+                </article>
+
+
+                <!-- PROPERTY 4 -->
+
+                <article class="listing-card"
+                    data-purpose="sale"
+                    data-type="land"
+                    data-location="ibadan">
+
+                    <div class="listing-image">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=85"
+                            alt="Open land and landscape">
+
+                        <span class="listing-status">For Sale</span>
+                    </div>
+
+                    <div class="listing-info">
+
+                        <span class="listing-location">IBADAN, OYO STATE</span>
+
+                        <h3>Residential Land Opportunity</h3>
+
+                        <p class="listing-description">
+                            A land listing for prospective residential
+                            development and investment.
+                        </p>
+
+                        <div class="listing-features">
+                            <span>Residential</span>
+                            <span>Land</span>
+                        </div>
+
+                        <div class="listing-bottom">
+                            <strong>₦35,000,000</strong>
+                            <a href="property-details.html">View Property ↗</a>
+                        </div>
+
+                    </div>
+                </article>
+
+
+            </div>
+
+
+            <div class="no-results" id="no-results">
+                <h3>No matching properties found.</h3>
+                <p>Try adjusting your filters or contact us for assistance.</p>
+            </div>
+
+            <p class="demo-note">
+                These are illustrative demonstration listings and prices,
+                not verified available properties.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ENQUIRY BANNER -->
+
+    <section class="listing-cta">
+        <div class="container">
+
+            <span class="eyebrow">YOUR PROPERTY JOURNEY STARTS HERE</span>
+
+            <h2>Haven't found what <em>you're looking for?</em></h2>
+
+            <p>
+                Tell us what you have in mind.
+                We'll help you explore suitable property options.
+            </p>
+
+            <a href="index.html#contact" class="button button-gold">
+                Make an enquiry ↗
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="brand">
+                    <span class="brand-name">ALTERRA<span>.</span></span>
+                    <span class="brand-subtitle">ESTATES & REALTY</span>
+                </a>
+
+                <p>Beyond Property.<br>A Better Way of Living.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About us</a>
+                <a href="properties.html">Properties</a>
+                <a href="index.html#services">Services</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Property</h4>
+                <a href="properties.html">For sale</a>
+                <a href="properties.html">For rent</a>
+                <a href="properties.html">Land</a>
+                <a href="properties.html">Commercial</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Get in touch</h4>
+                <a href="index.html#contact">Contact us</a>
+                <a href="index.html#contact">WhatsApp</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span class="current-year"></span> ALTERRA Estates & Realty. All rights reserved.</p>
+            <p>Designed with intention.</p>
+        </div>
+
+    </div>
+</footer>
+
+<script src="js/properties.js"></script>
+
+</body>
+</html>
